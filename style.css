@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #000000;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body .sbox {
+  overflow: hidden;
+  height: 100px;
+  width: 400px;
+  background-color: #0061ac;
+  position: relative;
+}
+
+body .sbox .one,
+body .sbox .two,
+body .sbox .three,
+body .sbox .four {
+  color: #fff;
+  font-size: 50px;
+  height: 70px;
+  width: 70px;
+  background-color: #003e6d;
+  margin: 0 5px 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: -71px;
+}
+
+body .sbox .one {
+  left: 40px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+body .sbox .two {
+  left: 120px;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+body .sbox .three {
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
+  left: 200px;
+}
+
+body .sbox .four {
+  -webkit-transition: 0.8s all;
+  transition: 0.8s all;
+  left: 280px;
+}
+
+body .sbox:hover .one,
+body .sbox:hover .two,
+body .sbox:hover .three,
+body .sbox:hover .four {
+  bottom: 15px;
+}
